@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Yeekong Yang</title>
+    <link rel="stylesheet" href="topBar.css">
+    <link rel="stylesheet" href="file.js">
+    <style>
+        .box { /* container for image and paragraph */
+            display: flex;
+            align-items: flex-start;
+            gap: 80px;
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.08);
+            padding: 70px;
+            font-family: sans-serif;
+        }
+
+        img[alt="headShot"] { /* picture */
+            width: 180px; 
+            min-width: 120px;
+            border: 5px solid #333;
+            border-radius: 50%; /* the oval shape "%" only one that can make it an oval*/
+            display: block;
+            margin: 0;
+            box-shadow: 0 20px 12px rgba(0,0,0,0.1);
+            background: #eee;
+        }
+
+        p {
+            line-height: 1.5;
+            margin: 0;
+            width: 60%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+    </nav>
+    <div class="box">
+        <img src="images/headShot.jpg" alt="headShot">
+        <p>
+            Hello!<br><br>
+            My name is Yeekong Yang. I am the Project Coordinator for Erudition Tech. My community role is the Tech Ecosystem Awareness Lead, so I research tech news and share them with the cohort.
+        </p>
+    </div>
+
+
+</body>
+</html>
