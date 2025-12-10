@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Yeekong Yang</title>
+    <link rel="stylesheet" href="topBar.css">
+    <style>
+        .box { 
+            align-items: flex-start;
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.08);
+            padding: 70px;
+            font-family: sans-serif;
+        }
+        .project-image {
+            max-width: 50%;    /* don't overflow its container */
+            width: 600px;       /* desired displayed width (change as needed) */
+            height: auto;       /* preserve aspect ratio */
+            display: block;
+  margin-left: auto;    /* Auto margins center it horizontally */
+  margin-right: auto;
+        }
+        .para-box {
+            background: #f2f2f2;      /* light grey background */
+            color: #222;              /* text color */
+            padding: 18px 20px;       /* inner spacing */
+            border-radius: 8px;       /* rounded corners */
+            margin-top: 16px;         /* spacing above box */
+            max-width: 760px;         /* avoid overflowing the .box */
+            line-height: 1.45;
+        }
+    </style>
+</head>
+<body>
+
+     <div>
+    <nav>
+        <a href="home.html" id="homeButton">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    </div>
+
+    <div class="box">
+        <h1 href="github">Pokemon API</h1>
+        <p class="para-box">This project uses an API to get pokemon stats from 
+            <a href="https://pokeapi.co/">PokeAPI<a>. 
+            This will then convert into Json.
+        </p>
+        
+    </div>
+
+    <div class="box">
+        <h1>Hexapod</h1>
+        <p class="para-box">
+        <img src="images/61zmykS365L.jpg" alt="Hexapod" class="project-image">
+        <br>
+        <a>
+            What it takes to build: 
+            <br><br> 
+Hardware:
+<br>
+- Arduino Mega or Uno<br>
+- Raspberry Pi<br>
+- Ultrasonic sensor (for obstacle detection)<br>
+- IMU (gyroscope + accelerometer for balance)<br>
+- Optional: Camera module (if using Raspberry Pi for vision)<br>
+- Rechargeable batterys<br>
+- 12 servo motors<br>
+- PCA9685 (16-channel PWM driver for servos)<br>
+- Jumper wires, servo extension cables<br>
+- Breadboard or custom PCB for connections<br>
+- Screws, nuts, bolts<br>
+- Servo mounting brackets
+<br><br>
+Frame Materials:
+<br>
+- Acrylic sheets (lightweight and strong)<br>
+- Aluminum (for durability)<br>
+- 3D-printed parts (PLA or ABS)<br>
+- Wood or cardboard (for prototypes)
+<br><br>
+Code Languages, Tools, and Software
+<br>
+- Python (for Raspberry Pi control, AI, and sensor integration)<br>
+- Arduino IDE (C/C++) (for servo control and basic logic)<br>
+- Command Line / Bash (for Raspberry Pi setup)<br>
+- Software for Robot Locomotion
+<br><br>
+Mechanical Design Software:
+<br>
+- Fusion 360 or SolidWorks (for designing body parts)
+<br><br>
+Tools:
+<br>
+- Screwdrivers, pliers, soldering iron, 3D printer (optional but useful)
+<br><br>
+Testing & Debugging Gear:
+<br>
+- Multimeter<br>
+- USB cables for programming
+
+<p class="para-box">
+    I bought the main body, boards, moters, and sensors online from <a href="https://docs.freenove.com/projects/fnk0052/en/latest/fnk0052/codes/tutorial/Welcome.html">Freenove</a>. This is also where they have the documentation for building and setting up software. 
+    <br><br>
+    For this project I used a Raspbery Pi 5 with 16gb of RAM. I used a 64gb micro SD card for storage
+    <image src="images/1148231_1.webp" alt="Raspberry Pi 5 16gb" class="project-image">
+</p>
+</div>
+
+</body>
+</html>
