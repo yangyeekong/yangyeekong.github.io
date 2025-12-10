@@ -1,117 +1,164 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Yeekong Yang</title>
+    <title>Projects | Yeekong Yang</title>
     <link rel="stylesheet" href="topBar.css">
     <style>
-        .box { 
-            align-items: flex-start;
+        body {
+            font-family: sans-serif;
+            background: #f6f7f8;
+            margin: 0;
+            padding: 20px;
+        }
+        nav { margin: 0 auto 24px auto; max-width: 980px; }
+        nav a { margin-right: 16px; text-decoration: none; color: #333; }
+
+        .box {
             max-width: 900px;
-            margin: 40px auto 0 auto;
+            margin: 24px auto;
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.08);
-            padding: 70px;
-            font-family: sans-serif;
+            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.06);
+            padding: 40px;
         }
+
+        .project-title {
+            margin-top: 0;
+        }
+
+        .project-media {
+            text-align: center;
+            margin: 18px 0;
+        }
+
         .project-image {
-            max-width: 50%;    /* don't overflow its container */
-            width: 600px;       /* desired displayed width (change as needed) */
-            height: auto;       /* preserve aspect ratio */
-            display: block;
-  margin-left: auto;    /* Auto margins center it horizontally */
-  margin-right: auto;
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            border-radius: 8px;
+            display: inline-block;
         }
+
         .para-box {
-            background: #f2f2f2;      /* light grey background */
-            color: #222;              /* text color */
-            padding: 18px 20px;       /* inner spacing */
-            border-radius: 8px;       /* rounded corners */
-            margin-top: 16px;         /* spacing above box */
-            max-width: 760px;         /* avoid overflowing the .box */
+            background: #f2f2f2;
+            color: #222;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 16px 0;
             line-height: 1.45;
+        }
+
+        .project-list {
+            margin: 12px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .project-list li {
+            margin-bottom: 6px;
+        }
+
+        a { color: #0066cc; }
+        
+        .SMSChart {
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
 
-     <div>
-    <nav>
-        <a href="index.html" id="homeButton">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="contactMe.html">Contact Me</a>
-        <a href="projects.html">Projects</a>
-    </nav>
-    </div>
+<nav>
+    <a href="index.html" id="homeButton">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contactMe.html">Contact Me</a>
+    <a href="projects.html">Projects</a>
+</nav>
 
-    <div class="box">
-        <h1 href="github">Pokemon API</h1>
-        <p class="para-box">This project uses an API to get pokemon stats from 
-            <a href="https://pokeapi.co/">PokeAPI<a>. 
-            This will then convert into Json.
-        </p>
+<main>
+                    <!-- Pokemon API -->
+    <article class="box" id="pokemon-api">
+        <h1 class="project-title">Pokemon API</h1>
+        <div class="para-box">
+            This project uses an API to get Pokémon stats from
+            <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokeAPI</a>.
+            Responses are converted to JSON and displayed/consumed by the app.
+        </div>
+    </article>
+                    <!-- SMS -->
+    <article class="box" id="SMS">
+        <h1 class="project-title">Communication system for Michels Corperation's IT</h1>
+        <div class="para-box">
+            Cycle 19's project was an RFP from Michels Corperation for an improved IT resources page, better document management, and communications.
+            <br><br>
+            My team Team Eurudition Tech won both sprint 1 and sprint 3. With my part being the backend for the communications utilizing Microsoft 365 apps as our tech stack.
+            <br><br>
+            I used Power Automate to send email though Outlook, Teams announcments, and the SMS. 
+            <br><br>
+            <img src="images/SMSFlowChart.png" alt="Backend Flow Chart for SMS" class="SMSChart">
+            <br><br>
+            Did you know that SMS notifications are opend 98% of the time compared to the low 20% for emails?
+        </div>
+    </article>
+                    <!-- Hexapod -->
+    <article class="box" id="hexapod">
+        <h1 class="project-title">Hexapod</h1>
+
+        <div class="project-media">
+            <img src="images/61zmykS365L.jpg" alt="Hexapod" class="project-image">
+        </div>
+
+        <div class="para-box">
+            I bought the main body, boards, motors, and sensors online from
+            <a href="https://docs.freenove.com/projects/fnk0052/en/latest/fnk0052/codes/tutorial/Welcome.html" target="_blank" rel="noopener">Freenove</a>.
+            Their documentation covers building and Raspberry Pi setup. For this project I used a Raspberry Pi 5 with 16 GB of RAM and a 64 GB micro SD card.
+        </div>
+
+        <div class="project-media">
+            <img src="images/1148231_1.webp" alt="Raspberry Pi 5 16GB" class="project-image">
+        </div>
+
+        <div class="para-box">
+        <h3>What it takes to build</h3>
+
+        <h4>Hardware</h4>
+        <ul class="project-list">
+            <li>Arduino Mega or Uno</li>
+            <li>Raspberry Pi</li>
+            <li>Ultrasonic sensor (for obstacle detection)</li>
+            <li>IMU (gyroscope + accelerometer for balance)</li>
+            <li>Optional: Camera module (for vision)</li>
+            <li>Rechargeable batteries</li>
+            <li>12 servo motors</li>
+            <li>PCA9685 (16-channel PWM driver for servos)</li>
+            <li>Jumper wires, servo extension cables</li>
+            <li>Breadboard or custom PCB</li>
+            <li>Screws, nuts, bolts, servo mounting brackets</li>
+        </ul>
+
+        <h4>Frame materials</h4>
+        <ul class="project-list">
+            <li>Acrylic sheets (lightweight)</li>
+            <li>Aluminum (durable)</li>
+            <li>3D-printed parts (PLA/ABS)</li>
+            <li>Wood or cardboard (prototypes)</li>
+        </ul>
+
+        <h4>Code, tools and software</h4>
+        <ul class="project-list">
+            <li>Python (Raspberry Pi control, sensors, AI)</li>
+            <li>Arduino (C/C++) for low-level servo control</li>
+            <li>Command line / Bash for Pi setup</li>
+            <li>Fusion 360 / SolidWorks for mechanical design</li>
+            <li>Screwdrivers, pliers, soldering iron, 3D printer (optional)</li>
+        </ul>
+        </div>
         
-    </div>
+    </article>      <!-- END -->
 
-    <div class="box">
-        <h1>Hexapod</h1>
-        <p class="para-box">
-        <img src="images/61zmykS365L.jpg" alt="Hexapod" class="project-image">
-        <br>
-        <a>
-            What it takes to build: 
-            <br><br> 
-Hardware:
-<br>
-- Arduino Mega or Uno<br>
-- Raspberry Pi<br>
-- Ultrasonic sensor (for obstacle detection)<br>
-- IMU (gyroscope + accelerometer for balance)<br>
-- Optional: Camera module (if using Raspberry Pi for vision)<br>
-- Rechargeable batterys<br>
-- 12 servo motors<br>
-- PCA9685 (16-channel PWM driver for servos)<br>
-- Jumper wires, servo extension cables<br>
-- Breadboard or custom PCB for connections<br>
-- Screws, nuts, bolts<br>
-- Servo mounting brackets
-<br><br>
-Frame Materials:
-<br>
-- Acrylic sheets (lightweight and strong)<br>
-- Aluminum (for durability)<br>
-- 3D-printed parts (PLA or ABS)<br>
-- Wood or cardboard (for prototypes)
-<br><br>
-Code Languages, Tools, and Software
-<br>
-- Python (for Raspberry Pi control, AI, and sensor integration)<br>
-- Arduino IDE (C/C++) (for servo control and basic logic)<br>
-- Command Line / Bash (for Raspberry Pi setup)<br>
-- Software for Robot Locomotion
-<br><br>
-Mechanical Design Software:
-<br>
-- Fusion 360 or SolidWorks (for designing body parts)
-<br><br>
-Tools:
-<br>
-- Screwdrivers, pliers, soldering iron, 3D printer (optional but useful)
-<br><br>
-Testing & Debugging Gear:
-<br>
-- Multimeter<br>
-- USB cables for programming
-
-<p class="para-box">
-    I bought the main body, boards, moters, and sensors online from <a href="https://docs.freenove.com/projects/fnk0052/en/latest/fnk0052/codes/tutorial/Welcome.html">Freenove</a>. This is also where they have the documentation for building and setting up software. 
-    <br><br>
-    For this project I used a Raspbery Pi 5 with 16gb of RAM. I used a 64gb micro SD card for storage
-    <image src="images/1148231_1.webp" alt="Raspberry Pi 5 16gb" class="project-image">
-</p>
-</div>
+</main>
 
 </body>
 </html>
+<!--
