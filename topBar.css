@@ -16,3 +16,36 @@ nav a {
 nav a:hover {
     color: #ff9800;
 }
+
+/* Layout fixes: keep everything inside boxes */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.para-box {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.project-image, .SMSChart {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-list {
+    margin-left: 1.25rem;
+}
+
+@media (max-width: 1000px) {
+    .box {
+        padding: 30px;
+        gap: 20px;
+    }
+}

@@ -6,15 +6,30 @@
     <title>About Me | Yeekong Yang</title>
     <link rel="stylesheet" href="topBar.css">
     <style>
-        .box { 
+        .box { /* container for image and paragraph */
+            display: flex;
+            flex-wrap: wrap; /* allow children to wrap instead of overflowing */
             align-items: flex-start;
+            gap: 40px;
             max-width: 900px;
+            width: calc(100% - 40px);
             margin: 40px auto 0 auto;
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 1px 18px 10px rgba(0,0,0,0.08);
-            padding: 70px;
+            padding: 40px;
             font-family: sans-serif;
+        }
+
+        .box .project-title {
+            width: 100%;
+            margin: 0 0 12px 0;
+            font-size: 1.4rem;
+        }
+
+        .box .para-box, .box .project-media {
+            flex: 1 1 280px; /* allow growth and shrink; set a reasonable base */
+            min-width: 220px;
         }
     </style>
 </head>
