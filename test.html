@@ -3,30 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me | Yeekong Yang</title>
+    <link rel="stylesheet" href="topBar.css">
     <style>
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .container > div {
-            background-color: #000000;
-            color: white;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
+        .box { 
+            align-items: flex-start;
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.08);
+            padding: 70px;
+            font-family: sans-serif;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div>1</div>
-        <div>2</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    
+    <main>
+        <!-- Pokemon API -->
+        <div class="box" id="pokemon-api">
+        <h1 class="project-title">Pokemon API</h1>
+        <div class="para-box">
+            This project uses an API to get Pokémon stats from
+            <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokeAPI</a>.
+            Responses are converted to JSON and displayed/consumed by the app.
+        </div>
     </div>
-    <div class="container">
-      <div>3</div>
-      <div>4</div>
+                    <!-- SMS -->
+    <div class="box" id="SMS">
+        <h1 class="project-title">Communication system for Michels Corperation's IT</h1>
+        <div class="para-box">
+            Cycle 19's project was an RFP from Michels Corperation for an improved IT resources page, better document management, and communications.
+            <br><br>
+            My team Team Eurudition Tech won both sprint 1 and sprint 3. With my part being the backend for the communications utilizing Microsoft 365 apps as our tech stack.
+            <br><br>
+            I used Power Automate to send email though Outlook, Teams announcments, and the SMS. 
+            <br><br>
+            <img src="images/SMSFlowChart.png" alt="Backend Flow Chart for SMS" class="SMSChart">
+            <br><br>
+            Did you know that SMS notifications are opend 98% of the time compared to the low 20% for emails?
+        </div>
     </div>
+                    <!-- Hexapod -->
+    <div class="box" id="hexapod">
+        <h1 class="project-title">Hexapod</h1>
+
+        <div class="project-media">
+            <img src="images/61zmykS365L.jpg" alt="Hexapod" class="project-image">
+        </div>
+
+        <div class="para-box">
+            I bought the main body, boards, motors, and sensors online from
+            <a href="https://docs.freenove.com/projects/fnk0052/en/latest/fnk0052/codes/tutorial/Welcome.html" target="_blank" rel="noopener">Freenove</a>.
+            Their documentation covers building and Raspberry Pi setup. For this project I used a Raspberry Pi 5 with 16 GB of RAM and a 64 GB micro SD card.
+        </div>
+
+        <div class="project-media">
+            <img src="images/1148231_1.webp" alt="Raspberry Pi 5 16GB" class="project-image">
+        </div>
+
+        <div class="para-box">
+        <h3>What it takes to build</h3>
+
+        <h4>Hardware</h4>
+        <ul class="project-list">
+            <li>Arduino Mega or Uno</li>
+            <li>Raspberry Pi</li>
+            <li>Ultrasonic sensor (for obstacle detection)</li>
+            <li>IMU (gyroscope + accelerometer for balance)</li>
+            <li>Optional: Camera module (for vision)</li>
+            <li>Rechargeable batteries</li>
+            <li>12 servo motors</li>
+            <li>PCA9685 (16-channel PWM driver for servos)</li>
+            <li>Jumper wires, servo extension cables</li>
+            <li>Breadboard or custom PCB</li>
+            <li>Screws, nuts, bolts, servo mounting brackets</li>
+        </ul>
+
+        <h4>Frame materials</h4>
+        <ul class="project-list">
+            <li>Acrylic sheets (lightweight)</li>
+            <li>Aluminum (durable)</li>
+            <li>3D-printed parts (PLA/ABS)</li>
+            <li>Wood or cardboard (prototypes)</li>
+        </ul>
+
+        <h4>Code, tools and software</h4>
+        <ul class="project-list">
+            <li>Python (Raspberry Pi control, sensors, AI)</li>
+            <li>Arduino (C/C++) for low-level servo control</li>
+            <li>Command line / Bash for Pi setup</li>
+            <li>Fusion 360 / SolidWorks for mechanical design</li>
+            <li>Screwdrivers, pliers, soldering iron, 3D printer (optional)</li>
+        </ul>
+        </div>
+        
+    </div>      <!-- END -->
+
+</main>
+
 </body>
 </html>

@@ -1,93 +1,44 @@
-<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Yeekong Yang</title>
+    <title>About Me | Yeekong Yang</title>
     <link rel="stylesheet" href="topBar.css">
     <style>
-        body {
-            font-family: sans-serif;
-            background: #f6f7f8;
-            margin: 0;
-            padding: 20px;
-        }
-        nav { margin: 0 auto 24px auto; max-width: 980px; }
-        nav a { margin-right: 16px; text-decoration: none; color: #333; }
-
-        .box {
+        .box { 
+            align-items: flex-start;
             max-width: 900px;
-            margin: 24px auto;
+            margin: 40px auto 0 auto;
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.06);
-            padding: 40px;
-        }
-
-        .project-title {
-            margin-top: 0;
-        }
-
-        .project-media {
-            text-align: center;
-            margin: 18px 0;
-        }
-
-        .project-image {
-            max-width: 100%;
-            width: 600px;
-            height: auto;
-            border-radius: 8px;
-            display: inline-block;
-        }
-
-        .para-box {
-            background: #f2f2f2;
-            color: #222;
-            padding: 18px 20px;
-            border-radius: 8px;
-            margin: 16px 0;
-            line-height: 1.45;
-        }
-
-        .project-list {
-            margin: 12px 0 0 0;
-            padding-left: 20px;
-        }
-
-        .project-list li {
-            margin-bottom: 6px;
-        }
-
-        a { color: #0066cc; }
-        
-        .SMSChart {
-            max-width: 100%;
+            box-shadow: 0 1px 18px 10px rgba(0,0,0,0.08);
+            padding: 70px;
+            font-family: sans-serif;
         }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="index.html" id="homeButton">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="contactMe.html">Contact Me</a>
-    <a href="projects.html">Projects</a>
-</nav>
-
-<main>
-                    <!-- Pokemon API -->
-    <article class="box" id="pokemon-api">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    
+    <main>
+        <!-- Pokemon API -->
+        <div class="box" id="pokemon-api">
         <h1 class="project-title">Pokemon API</h1>
         <div class="para-box">
             This project uses an API to get Pokémon stats from
             <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokeAPI</a>.
             Responses are converted to JSON and displayed/consumed by the app.
         </div>
-    </article>
+    </div>
                     <!-- SMS -->
-    <article class="box" id="SMS">
+    <div class="box" id="SMS">
         <h1 class="project-title">Communication system for Michels Corperation's IT</h1>
         <div class="para-box">
             Cycle 19's project was an RFP from Michels Corperation for an improved IT resources page, better document management, and communications.
@@ -100,9 +51,9 @@
             <br><br>
             Did you know that SMS notifications are opend 98% of the time compared to the low 20% for emails?
         </div>
-    </article>
+    </div>
                     <!-- Hexapod -->
-    <article class="box" id="hexapod">
+    <div class="box" id="hexapod">
         <h1 class="project-title">Hexapod</h1>
 
         <div class="project-media">
@@ -155,10 +106,9 @@
         </ul>
         </div>
         
-    </article>      <!-- END -->
+    </div>      <!-- END -->
 
 </main>
 
 </body>
 </html>
-<!--
